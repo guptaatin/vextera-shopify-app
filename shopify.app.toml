@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "97b1b0c16fd41c5fa71b0c84a415cd59"
+name = "vextera-dev-app"
+handle = "vextera-dev-app"
+application_url = "https://transaction-church-statutes-camps.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "b-b-test-cn.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://transaction-church-statutes-camps.trycloudflare.com/auth/callback",
+  "https://transaction-church-statutes-camps.trycloudflare.com/auth/shopify/callback",
+  "https://transaction-church-statutes-camps.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
